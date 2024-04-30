@@ -363,7 +363,9 @@ export default function Landing() {
                 Enterprise Design
               </h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium a qui distinctio totam magnam mollitia fugiat ipsum obcaecati laudantium.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Accusantium a qui distinctio totam magnam mollitia fugiat ipsum
+                obcaecati laudantium.
               </p>
             </div>
             <div>
@@ -385,7 +387,8 @@ export default function Landing() {
                 Operations
               </h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga veritatis quasi laudantium voluptate.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga
+                veritatis quasi laudantium voluptate.
               </p>
             </div>
           </div>
@@ -396,13 +399,19 @@ export default function Landing() {
         <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
           <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
             <h2 className="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">
-            No es necesario tratar de inventar algo completamente diferente 
+              No es necesario tratar de inventar algo completamente diferente
             </h2>
             <p className="mb-4">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque nobis quasi minus autem ipsam repudiandae aspernatur? Cumque dolor nesciunt facilis, consequuntur omnis, assumenda fuga similique placeat cum ipsa dicta voluptatem!
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque
+              nobis quasi minus autem ipsam repudiandae aspernatur? Cumque dolor
+              nesciunt facilis, consequuntur omnis, assumenda fuga similique
+              placeat cum ipsa dicta voluptatem!
             </p>
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sit vel quos possimus quo, iste, tenetur facere dolor officiis voluptatibus provident a maxime dolorem rem, dolorum ipsam ab esse dignissimos.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Praesentium sit vel quos possimus quo, iste, tenetur facere dolor
+              officiis voluptatibus provident a maxime dolorem rem, dolorum
+              ipsam ab esse dignissimos.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4 mt-8">
@@ -424,14 +433,23 @@ export default function Landing() {
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div className="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
             <h2 className="mb-4 text-4xl font-bold text-gray-900 dark:text-white">
-            Impulsando la innovación en{" "}
-              <span className="font-extrabold">+200,000</span> empresas en todo el mundo
+              Impulsando la innovación en{" "}
+              <span className="font-extrabold">+200,000</span> empresas en todo
+              el mundo
             </h2>
             <p className="mb-4 font-light">
-            Realice un seguimiento del trabajo en toda la empresa a través de una plataforma colaborativa abierta. Vincula problemas en Jira e incorpora datos de otras herramientas de desarrollo de software, para que tus equipos de operaciones y soporte de TI tengan información contextual más rica para responder rápidamente a solicitudes, incidentes y cambios.
+              Realice un seguimiento del trabajo en toda la empresa a través de
+              una plataforma colaborativa abierta. Vincula problemas en Jira e
+              incorpora datos de otras herramientas de desarrollo de software,
+              para que tus equipos de operaciones y soporte de TI tengan
+              información contextual más rica para responder rápidamente a
+              solicitudes, incidentes y cambios.
             </p>
             <p className="mb-4 font-medium">
-            Ofrezca excelentes experiencias de servicio rápidamente, sin la complejidad de las soluciones ITSM tradicionales. Acelere el trabajo de desarrollo crítico, elimine el trabajo duro e implemente cambios con facilidad.
+              Ofrezca excelentes experiencias de servicio rápidamente, sin la
+              complejidad de las soluciones ITSM tradicionales. Acelere el
+              trabajo de desarrollo crítico, elimine el trabajo duro e
+              implemente cambios con facilidad.
             </p>
             <a
               href="#"

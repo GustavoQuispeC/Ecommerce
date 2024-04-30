@@ -15,7 +15,7 @@ export function NavbarComponent() {
   return (
     <div>
       <Navbar fluid rounded className="bg-cyan-900">
-        <NavbarBrand href="/">
+        <NavbarBrand href="/home">
           <img
             src="/Logo.png"
             className="mr-3 h-6 sm:h-9"
@@ -50,7 +50,7 @@ export function NavbarComponent() {
             <input
               type="text"
               id="search-navbar"
-              className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-cyan-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="w-52 md:w-full ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-cyan-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Search..."
             />
           </div>
@@ -59,9 +59,9 @@ export function NavbarComponent() {
         <div className="flex md:order-2">
           <Link href="/cart">
             <img
-              src="/cart_113919.png"
+              src="/cart.png"
               alt="..."
-              className="h-8 cursor-grab mx-2"
+              className="h-8 cursor-grab mx-2 hover:scale-110"
             />
           </Link>
 

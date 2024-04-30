@@ -1,13 +1,18 @@
+"use client";
 import React from "react";
+import { Button, Modal } from "flowbite-react";
+import { useState } from "react";
+import { HiOutlineExclamationCircle } from "react-icons/hi";
 
 const Cart = () => {
+  const [openModal, setOpenModal] = useState(false);
   return (
     <div className="bg-gray-100 h-screen py-8">
       <div className="container mx-auto px-4">
-        <h1 className="text-2xl font-semibold mb-4">Shopping Cart</h1>
+        <h1 className="text-2xl font-semibold mb-4">Detalle de compra</h1>
         <div className="flex flex-col md:flex-row gap-4">
           <div className="md:w-3/4">
-            <div className="bg-white rounded-lg shadow-md p-6 mb-4">
+            <div className="bg-white rounded-lg shadow-md p-1 md:p-6 mb-4">
               <table className="w-full">
                 <thead>
                   <tr>
@@ -19,29 +24,39 @@ const Cart = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="py-4">
-                      <div className="flex items-center">
+                    <td className="py-2">
+                      <div className="mr-0">
                         <img
-                          className="h-16 w-16 mr-4"
+                          className="h-16 w-16"
                           src="/iphone_14_purple.webp"
                           alt="Product image"
                         />
-                        <span className="font-semibold">Iphone 14 plus</span>
                       </div>
+                      <span className="font-semibold">Iphone 14 plus</span>
                     </td>
-                    <td className="py-4">$1300.00</td>
-                    <td className="py-4">
-                      <div className="flex items-center">
-                        <button className="border rounded-md py-2 px-4 mr-2">
+                    <td className="py-2">$1300.00</td>
+
+                    <td className="py-2">
+                      <div className="mr-0">
+                        <button className="border rounded-md py-0.5 md:py-2 px-2">
                           -
                         </button>
-                        <span className="text-center w-8">1</span>
-                        <button className="border rounded-md py-2 px-4 ml-2">
+                        <span className="text-center w-6"> 1 </span>
+                        <button className="border rounded-md py-0.5 md:py-2 px-2">
                           +
                         </button>
                       </div>
                     </td>
-                    <td className="py-4">$1300.00</td>
+                    <td className="py-2">$1300.00</td>
+                    <td className="py-2">
+                      <button onClick={() => setOpenModal(true)}>
+                        <img
+                          src="/delete.png"
+                          className="w-5 h-4 md:w-7 md:h-7 hover:scale-110"
+                          alt="Delete product"
+                        />
+                      </button>
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -68,12 +83,38 @@ const Cart = () => {
                 <span className="font-semibold">$1301.99</span>
               </div>
               <button className="bg-blue-500 text-white py-2 px-4 rounded-lg mt-4 w-full">
-               Ir a pagar
+                Ir a pagar
               </button>
             </div>
           </div>
         </div>
       </div>
+      {openModal && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white p-8 rounded-lg">
+            <div className="text-center">
+              <HiOutlineExclamationCircle className="mx-auto mb-4 h-14 w-14 text-gray-400 dark:text-gray-200" />
+              <h3 className="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">
+                ¿Estás seguro de que quieres eliminar este producto?
+              </h3>
+              <div className="flex justify-center gap-4">
+                <button
+                  className="bg-red-500 text-white py-2 px-4 rounded-lg"
+                  onClick={() => setOpenModal(false)}
+                >
+                  Sí, estoy seguro
+                </button>
+                <button
+                  className="bg-gray-300 text-gray-700 py-2 px-4 rounded-lg"
+                  onClick={() => setOpenModal(false)}
+                >
+                  No, cancelar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

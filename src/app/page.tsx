@@ -1,14 +1,14 @@
 import { Button } from "flowbite-react";
 export default function Landing() {
   return (
-    // <main className="flex min-h-screen flex-col p-0 mx-auto">
-    //   <section className="bg-slate-100 dark:bg-gray-900">
-    //     <div className="grid py-8 px-4 mx-auto max-w-screen-xl lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-    //       <div className="place-self-center mr-auto lg:col-span-7">
-    //         <h1 className="mb-4 max-w-2xl text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl dark:text-white">
+    // <main classNameName="flex min-h-screen flex-col p-0 mx-auto">
+    //   <section classNameName="bg-slate-100 dark:bg-gray-900">
+    //     <div classNameName="grid py-8 px-4 mx-auto max-w-screen-xl lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+    //       <div classNameName="place-self-center mr-auto lg:col-span-7">
+    //         <h1 classNameName="mb-4 max-w-2xl text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl dark:text-white">
     //           Bienvenidos a SmartMarket
     //         </h1>
-    //         <p className="mb-6 max-w-2xl font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+    //         <p classNameName="mb-6 max-w-2xl font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
     //           ¡Nuestra tienda de tecnología de vanguardia! En nuestra tienda, te
     //           ofrecemos lo último en tecnología para satisfacer tus necesidades
     //           digitales. Desde smartphones y laptops hasta dispositivos
@@ -17,27 +17,27 @@ export default function Landing() {
     //           digital..
     //         </p>
     //         <Button
-    //           className="inline-flex py-1 px-5  font-medium  rounded-lg border border-cyan-500 hover:bg-lime-50  hover:text-black"
+    //           classNameName="inline-flex py-1 px-5  font-medium  rounded-lg border border-cyan-500 hover:bg-lime-50  hover:text-black"
     //           href="/home"
     //         >
     //           Comprar ahora...
     //         </Button>
     //       </div>
-    //       <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+    //       <div classNameName="hidden lg:mt-0 lg:col-span-5 lg:flex">
     //         <img src="/apple.png" alt="apple" />
     //       </div>
     //     </div>
     //   </section>
 
-    //   <section className="bg-white dark:bg-gray-900">
-    //     <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
-    //       <h2 className="mb-8 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 lg:mb-16 dark:text-white md:text-4xl">
+    //   <section classNameName="bg-white dark:bg-gray-900">
+    //     <div classNameName="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
+    //       <h2 classNameName="mb-8 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 lg:mb-16 dark:text-white md:text-4xl">
     //         Ellos confian en nosotros
     //       </h2>
-    //       <div className="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400">
-    //         <a href="#" className="flex justify-center items-center">
+    //       <div classNameName="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400">
+    //         <a href="#" classNameName="flex justify-center items-center">
     //           <svg
-    //             className="h-9 hover:text-gray-900 dark:hover:text-white"
+    //             classNameName="h-9 hover:text-gray-900 dark:hover:text-white"
     //             viewBox="0 0 125 35"
     //             fill="currentColor"
     //             xmlns="http://www.w3.org/2000/svg"
@@ -50,9 +50,9 @@ export default function Landing() {
     //             />
     //           </svg>
     //         </a>
-    //         <a href="#" className="flex justify-center items-center">
+    //         <a href="#" classNameName="flex justify-center items-center">
     //           <svg
-    //             className="h-9 hover:text-gray-900 dark:hover:text-white"
+    //             classNameName="h-9 hover:text-gray-900 dark:hover:text-white"
     //             viewBox="0 0 86 29"
     //             fill="currentColor"
     //             xmlns="http://www.w3.org/2000/svg"
@@ -65,9 +65,9 @@ export default function Landing() {
     //             />
     //           </svg>
     //         </a>
-    //         <a href="#" className="flex justify-center items-center">
+    //         <a href="#" classNameName="flex justify-center items-center">
     //           <svg
-    //             className="h-8 hover:text-gray-900 dark:hover:text-white"
+    //             classNameName="h-8 hover:text-gray-900 dark:hover:text-white"
     //             viewBox="0 0 151 34"
     //             fill="currentColor"
     //             xmlns="http://www.w3.org/2000/svg"
@@ -91,9 +91,9 @@ export default function Landing() {
     //           </svg>
     //         </a>
 
-    //         <a href="#" className="flex justify-center items-center">
+    //         <a href="#" classNameName="flex justify-center items-center">
     //           <svg
-    //             className="h-9 hover:text-gray-900 dark:hover:text-white"
+    //             classNameName="h-9 hover:text-gray-900 dark:hover:text-white"
     //             viewBox="0 0 124 38"
     //             fill="currentColor"
     //             xmlns="http://www.w3.org/2000/svg"
@@ -104,9 +104,9 @@ export default function Landing() {
     //             />
     //           </svg>
     //         </a>
-    //         <a href="#" className="flex justify-center items-center">
+    //         <a href="#" classNameName="flex justify-center items-center">
     //           <svg
-    //             className="h-9 hover:text-gray-900 dark:hover:text-white"
+    //             classNameName="h-9 hover:text-gray-900 dark:hover:text-white"
     //             viewBox="0 0 137 37"
     //             fill="currentColor"
     //             xmlns="http://www.w3.org/2000/svg"
@@ -185,9 +185,9 @@ export default function Landing() {
     //             />
     //           </svg>
     //         </a>
-    //         <a href="#" className="flex justify-center items-center">
+    //         <a href="#" classNameName="flex justify-center items-center">
     //           <svg
-    //             className="h-6 hover:text-gray-900 dark:hover:text-white"
+    //             classNameName="h-6 hover:text-gray-900 dark:hover:text-white"
     //             viewBox="0 0 124 21"
     //             fill="currentColor"
     //             xmlns="http://www.w3.org/2000/svg"
@@ -246,23 +246,23 @@ export default function Landing() {
     //     </div>
     //   </section>
 
-    //   <section className="bg-gray-50 dark:bg-gray-800">
-    //     <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-    //       <div className="mb-8 max-w-screen-md lg:mb-16">
-    //         <h2 className="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">
+    //   <section classNameName="bg-gray-50 dark:bg-gray-800">
+    //     <div classNameName="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+    //       <div classNameName="mb-8 max-w-screen-md lg:mb-16">
+    //         <h2 classNameName="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">
     //           Diseñado para equipos empresariales como el suyo
     //         </h2>
-    //         <p className="text-gray-500 sm:text-xl dark:text-gray-400">
+    //         <p classNameName="text-gray-500 sm:text-xl dark:text-gray-400">
     //           Aquí en SmartMarket nos centramos en mercados donde la tecnología,
     //           la innovación y el capital pueden generar valor a largo plazo e
     //           impulsar el crecimiento económico.
     //         </p>
     //       </div>
-    //       <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+    //       <div classNameName="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
     //         <div>
-    //           <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+    //           <div classNameName="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
     //             <svg
-    //               className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+    //               classNameName="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
     //               fill="currentColor"
     //               viewBox="0 0 20 20"
     //               xmlns="http://www.w3.org/2000/svg"
@@ -274,19 +274,19 @@ export default function Landing() {
     //               ></path>
     //             </svg>
     //           </div>
-    //           <h3 className="mb-2 text-xl font-bold dark:text-white">
+    //           <h3 classNameName="mb-2 text-xl font-bold dark:text-white">
     //             Marketing
     //           </h3>
-    //           <p className="text-gray-500 dark:text-gray-400">
+    //           <p classNameName="text-gray-500 dark:text-gray-400">
     //             Plan it, create it, launch it. Collaborate seamlessly with all
     //             the organization and hit your marketing goals every month with
     //             our marketing plan.
     //           </p>
     //         </div>
     //         <div>
-    //           <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+    //           <div classNameName="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
     //             <svg
-    //               className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+    //               classNameName="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
     //               fill="currentColor"
     //               viewBox="0 0 20 20"
     //               xmlns="http://www.w3.org/2000/svg"
@@ -294,16 +294,16 @@ export default function Landing() {
     //               <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
     //             </svg>
     //           </div>
-    //           <h3 className="mb-2 text-xl font-bold dark:text-white">Legal</h3>
-    //           <p className="text-gray-500 dark:text-gray-400">
+    //           <h3 classNameName="mb-2 text-xl font-bold dark:text-white">Legal</h3>
+    //           <p classNameName="text-gray-500 dark:text-gray-400">
     //             Protect your organization, devices and stay compliant with our
     //             structured workflows and custom permissions made for you.
     //           </p>
     //         </div>
     //         <div>
-    //           <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+    //           <div classNameName="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
     //             <svg
-    //               className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+    //               classNameName="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
     //               fill="currentColor"
     //               viewBox="0 0 20 20"
     //               xmlns="http://www.w3.org/2000/svg"
@@ -316,18 +316,18 @@ export default function Landing() {
     //               <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path>
     //             </svg>
     //           </div>
-    //           <h3 className="mb-2 text-xl font-bold dark:text-white">
+    //           <h3 classNameName="mb-2 text-xl font-bold dark:text-white">
     //             Business Automation
     //           </h3>
-    //           <p className="text-gray-500 dark:text-gray-400">
+    //           <p classNameName="text-gray-500 dark:text-gray-400">
     //             Auto-assign tasks, send Slack messages, and much more. Now power
     //             up with hundreds of new templates to help you get started.
     //           </p>
     //         </div>
     //         <div>
-    //           <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+    //           <div classNameName="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
     //             <svg
-    //               className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+    //               classNameName="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
     //               fill="currentColor"
     //               viewBox="0 0 20 20"
     //               xmlns="http://www.w3.org/2000/svg"
@@ -340,18 +340,18 @@ export default function Landing() {
     //               ></path>
     //             </svg>
     //           </div>
-    //           <h3 className="mb-2 text-xl font-bold dark:text-white">
+    //           <h3 classNameName="mb-2 text-xl font-bold dark:text-white">
     //             Finance
     //           </h3>
-    //           <p className="text-gray-500 dark:text-gray-400">
+    //           <p classNameName="text-gray-500 dark:text-gray-400">
     //             Audit-proof software built for critical financial operations
     //             like month-end close and quarterly budgeting.
     //           </p>
     //         </div>
     //         <div>
-    //           <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+    //           <div classNameName="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
     //             <svg
-    //               className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+    //               classNameName="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
     //               fill="currentColor"
     //               viewBox="0 0 20 20"
     //               xmlns="http://www.w3.org/2000/svg"
@@ -359,19 +359,19 @@ export default function Landing() {
     //               <path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"></path>
     //             </svg>
     //           </div>
-    //           <h3 className="mb-2 text-xl font-bold dark:text-white">
+    //           <h3 classNameName="mb-2 text-xl font-bold dark:text-white">
     //             Enterprise Design
     //           </h3>
-    //           <p className="text-gray-500 dark:text-gray-400">
+    //           <p classNameName="text-gray-500 dark:text-gray-400">
     //             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
     //             Accusantium a qui distinctio totam magnam mollitia fugiat ipsum
     //             obcaecati laudantium.
     //           </p>
     //         </div>
     //         <div>
-    //           <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+    //           <div classNameName="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
     //             <svg
-    //               className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
+    //               classNameName="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300"
     //               fill="currentColor"
     //               viewBox="0 0 20 20"
     //               xmlns="http://www.w3.org/2000/svg"
@@ -383,10 +383,10 @@ export default function Landing() {
     //               ></path>
     //             </svg>
     //           </div>
-    //           <h3 className="mb-2 text-xl font-bold dark:text-white">
+    //           <h3 classNameName="mb-2 text-xl font-bold dark:text-white">
     //             Operations
     //           </h3>
-    //           <p className="text-gray-500 dark:text-gray-400">
+    //           <p classNameName="text-gray-500 dark:text-gray-400">
     //             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga
     //             veritatis quasi laudantium voluptate.
     //           </p>
@@ -395,13 +395,13 @@ export default function Landing() {
     //     </div>
     //   </section>
 
-    //   <section className="bg-white dark:bg-gray-900">
-    //     <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-    //       <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-    //         <h2 className="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">
+    //   <section classNameName="bg-white dark:bg-gray-900">
+    //     <div classNameName="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+    //       <div classNameName="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+    //         <h2 classNameName="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">
     //           No es necesario tratar de inventar algo completamente diferente
     //         </h2>
-    //         <p className="mb-4">
+    //         <p classNameName="mb-4">
     //           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque
     //           nobis quasi minus autem ipsam repudiandae aspernatur? Cumque dolor
     //           nesciunt facilis, consequuntur omnis, assumenda fuga similique
@@ -414,14 +414,14 @@ export default function Landing() {
     //           ipsam ab esse dignissimos.
     //         </p>
     //       </div>
-    //       <div className="grid grid-cols-2 gap-4 mt-8">
+    //       <div classNameName="grid grid-cols-2 gap-4 mt-8">
     //         <img
-    //           className="w-full rounded-lg"
+    //           classNameName="w-full rounded-lg"
     //           src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
     //           alt="office content 1"
     //         />
     //         <img
-    //           className="mt-4 w-full rounded-lg lg:mt-10"
+    //           classNameName="mt-4 w-full rounded-lg lg:mt-10"
     //           src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
     //           alt="office content 2"
     //         />
@@ -429,15 +429,15 @@ export default function Landing() {
     //     </div>
     //   </section>
 
-    //   <section className="bg-gray-50 dark:bg-gray-900 dark:bg-gray-800">
-    //     <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-    //       <div className="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
-    //         <h2 className="mb-4 text-4xl font-bold text-gray-900 dark:text-white">
+    //   <section classNameName="bg-gray-50 dark:bg-gray-900 dark:bg-gray-800">
+    //     <div classNameName="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+    //       <div classNameName="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
+    //         <h2 classNameName="mb-4 text-4xl font-bold text-gray-900 dark:text-white">
     //           Impulsando la innovación en{" "}
-    //           <span className="font-extrabold">+200,000</span> empresas en todo
+    //           <span classNameName="font-extrabold">+200,000</span> empresas en todo
     //           el mundo
     //         </h2>
-    //         <p className="mb-4 font-light">
+    //         <p classNameName="mb-4 font-light">
     //           Realice un seguimiento del trabajo en toda la empresa a través de
     //           una plataforma colaborativa abierta. Vincula problemas en Jira e
     //           incorpora datos de otras herramientas de desarrollo de software,
@@ -445,7 +445,7 @@ export default function Landing() {
     //           información contextual más rica para responder rápidamente a
     //           solicitudes, incidentes y cambios.
     //         </p>
-    //         <p className="mb-4 font-medium">
+    //         <p classNameName="mb-4 font-medium">
     //           Ofrezca excelentes experiencias de servicio rápidamente, sin la
     //           complejidad de las soluciones ITSM tradicionales. Acelere el
     //           trabajo de desarrollo crítico, elimine el trabajo duro e
@@ -453,11 +453,11 @@ export default function Landing() {
     //         </p>
     //         <a
     //           href="#"
-    //           className="inline-flex items-center font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700"
+    //           classNameName="inline-flex items-center font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700"
     //         >
     //           Mas información
     //           <svg
-    //             className="ml-1 w-6 h-6"
+    //             classNameName="ml-1 w-6 h-6"
     //             fill="currentColor"
     //             viewBox="0 0 20 20"
     //             xmlns="http://www.w3.org/2000/svg"
@@ -473,18 +473,87 @@ export default function Landing() {
     //     </div>
     //   </section>
 
-    //   <section className="bg-white dark:bg-gray-900">
-    //     <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-    //       <div className="mx-auto max-w-screen-sm text-center">
+    //   <section classNameName="bg-white dark:bg-gray-900">
+    //     <div classNameName="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+    //       <div classNameName="mx-auto max-w-screen-sm text-center">
     //         <a
     //           href="#"
-    //           className="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+    //           classNameName="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
     //         ></a>
     //       </div>
     //     </div>
     //   </section>
     // </main>
-    <>
-    </>
+
+<div className="h-screen" style={{backgroundImage: 'url("/presentacion.webp")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+<div className="text-center mt-24">
+      <div className="flex items-center justify-center">
+         <svg fill="none" viewBox="0 0 24 24" className="w-12 h-12 text-blue-500" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+         </svg>
+      </div>
+      <h2 className="text-4xl tracking-tight">
+         Sign in into your account
+      </h2>
+      <span className="text-sm">or <a href="#" className="text-blue-500"> 
+         register a new account
+      </a>
+   </span>
+</div>
+<div className="flex justify-center my-2 mx-4 md:mx-0">
+   <form className="w-full max-w-xl bg-white rounded-lg shadow-md p-6">
+      <div className="flex flex-wrap -mx-3 mb-6">
+         <div className="w-full md:w-full px-3 mb-6">
+            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor='Password'>Email address</label>
+            <input className="appearance-none block w-full bg-white text-gray-900 font-medium border border-gray-400 rounded-lg py-3 px-3 leading-tight focus:outline-none" type='email'  required/>
+         </div>
+         <div className="w-full md:w-full px-3 mb-6">
+            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor='Password'>Password</label>
+            <input className="appearance-none block w-full bg-white text-gray-900 font-medium border border-gray-400 rounded-lg py-3 px-3 leading-tight focus:outline-none" type='password' required/>
+         </div>
+         <div className="w-full flex items-center justify-between px-3 mb-3 ">
+            <label htmlFor="remember" className="flex items-center w-1/2">
+               <input type="checkbox" name="" id="" className="mr-1 bg-white shadow"/>
+               <span className="text-sm text-gray-700 pt-1">Remember Me</span>
+            </label>
+            <div className="w-1/2 text-right">
+               <a href="#" className="text-blue-500 text-sm tracking-tight">Forget your password?</a>
+            </div>
+         </div>
+         <div className="w-full md:w-full px-3 mb-6">
+            <button className="appearance-none block w-full bg-blue-600 text-gray-100 font-bold border border-gray-200 rounded-lg py-3 px-3 leading-tight hover:bg-blue-500 focus:outline-none focus:bg-white focus:border-gray-500">Sign in</button>
+         </div>
+         <div className="mx-auto -mb-6 pb-1">
+            <span className="text-center text-xs text-gray-700">or sign up with</span>
+         </div>
+         <div className="flex items-center w-full mt-2">
+            <div className="w-full md:w-1/3 px-3 pt-4 mx-2 border-t border-gray-400">
+               <button className='appearance-none flex items-center justify-center block w-full bg-gray-100 text-gray-700 shadow border border-gray-500 rounded-lg py-3 px-3 leading-tight hover:bg-gray-200 hover:text-gray-700 focus:outline-none'>
+                  <svg className="h-6 w-6 fill-current text-gray-700" viewBox="0 0 512 512">
+                     <path d="M455.27,32H56.73A24.74,24.74,0,0,0,32,56.73V455.27A24.74,24.74,0,0,0,56.73,480H256V304H202.45V240H256V189c0-57.86,40.13-89.36,91.82-89.36,24.73,0,51.33,1.86,57.51,2.68v60.43H364.15c-28.12,0-33.48,13.3-33.48,32.9V240h67l-8.75,64H330.67V480h124.6A24.74,24.74,0,0,0,480,455.27V56.73A24.74,24.74,0,0,0,455.27,32Z"/>
+                  </svg>
+               </button>
+            </div>
+            <div className="w-full md:w-1/3 px-3 pt-4 mx-2">
+               <button className="appearance-none flex items-center justify-center block w-full bg-gray-100 text-gray-700 shadow border border-gray-500 rounded-lg py-3 px-3 leading-tight hover:bg-gray-200 hover:text-gray-700 focus:outline-none">
+                  <svg className="h-6 w-6 fill-current text-gray-700" viewBox="0 0 512 512">
+                     <path d="M444.17,32H70.28C49.85,32,32,46.7,32,66.89V441.61C32,461.91,49.85,480,70.28,480H444.06C464.6,480,480,461.79,480,441.61V66.89C480.12,46.7,464.6,32,444.17,32ZM170.87,405.43H106.69V205.88h64.18ZM141,175.54h-.46c-20.54,0-33.84-15.29-33.84-34.43,0-19.49,13.65-34.42,34.65-34.42s33.85,14.82,34.31,34.42C175.65,160.25,162.35,175.54,141,175.54ZM405.43,405.43H341.25V296.32c0-26.14-9.34-44-32.56-44-17.74,0-28.24,12-32.91,23.69-1.75,4.2-2.22,9.92-2.22,15.76V405.43H209.38V205.88h64.18v27.77c9.34-13.3,23.93-32.44,57.88-32.44,42.13,0,74,27.77,74,87.64Z"/>
+                  </svg>
+               </button>
+            </div>
+            <div className="w-full md:w-1/3 px-3 pt-4 mx-2 border-t border-gray-400">
+               <button className="appearance-none flex items-center justify-center block w-full bg-gray-100 text-gray-700 shadow border border-gray-500 rounded-lg py-3 px-3 leading-tight hover:bg-gray-200 hover:text-gray-700 focus:outline-none">
+                  <svg className="h-6 w-6 fill-current text-gray-700" viewBox="0 0 512 512">
+                     <path d="M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z"/>
+                  </svg>
+               </button>
+            </div>
+         </div>
+      </div>
+   </form>
+</div>
+</div>
+
+
   );
 }

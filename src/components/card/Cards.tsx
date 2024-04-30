@@ -67,7 +67,7 @@ const Cards: React.FC<Product> = ({
         </span>
         <a
           href="/cart"
-          className="text-white bg-cyan-600 hover:bg-blue-800 focus:ring-3 focus:outline-none focus:ring-blue-300 font-semibold rounded-lg text-sm px-3 py-1.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          className="text-white bg-cyan-600 hover:bg-cyan-800 focus:ring-3 focus:outline-none focus:ring-blue-300 font-semibold rounded-lg text-sm px-3 py-1.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
           Comprar
         </a>

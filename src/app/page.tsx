@@ -521,7 +521,7 @@ export default function Landing() {
             </div>
          </div>
          <div className="w-full md:w-full px-3 mb-6">
-            <button className="appearance-none block w-full bg-blue-600 text-gray-100 font-bold border border-gray-200 rounded-lg py-3 px-3 leading-tight hover:bg-blue-500 focus:outline-none focus:bg-white focus:border-gray-500">Sign in</button>
+            <button className="appearance-none block w-full bg-cyan-800 text-gray-100 font-bold border border-gray-200 rounded-lg py-3 px-3 leading-tight hover:bg-cyan-700 focus:outline-none focus:bg-white focus:border-gray-500">Sign in</button>
          </div>
          <div className="mx-auto -mb-6 pb-1">
             <span className="text-center text-xs text-gray-700">or sign up with</span>

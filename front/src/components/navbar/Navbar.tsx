@@ -61,7 +61,7 @@ export const NavbarComponent = () => {
   const handleSignOut = () => {
     if (typeof window !== "undefined" && window.localStorage) {
       localStorage.removeItem("userSession");
-      setToken(null);
+      setToken(undefined);
       window.location.href = "/product";
     }
   };

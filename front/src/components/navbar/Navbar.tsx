@@ -62,7 +62,7 @@ export const NavbarComponent = () => {
     if (typeof window !== "undefined" && window.localStorage) {
       localStorage.removeItem("userSession");
       setToken(undefined);
-      window.location.href = "/product";
+      window.location.href = "/home";
     }
   };
 

@@ -1,24 +1,14 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "src/index.ts",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "src/index.ts"
-    }
-  ],
-  "env": {
-    "PORT": "3001"
-  },
-  "functions": {
-    "api": {
-      "memory": 1024,
-      "maxDuration": 30
-    }
+    "builds": [
+      {
+        "src": "/index.ts",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.ts"
+      }
+    ]
   }
-}

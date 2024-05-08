@@ -1,10 +1,12 @@
 import { IProduct } from "@/types";
+import axios from "axios";
 const apiUrl = process.env.NEXT_PUBLIC_API_URL_PRODUCT;
 
 export async function getProductsDB() {
   try {
     const res = await fetch(`${apiUrl}/products`, {
-      method: "GET", next: { revalidate: 3600 }
+      method: "GET",
+      next: { revalidate: 3600 },
     });
     const products: IProduct[] = await res.json();
     return products;
@@ -36,4 +38,42 @@ export async function getProductById(id: string) {
   }
 }
 
-// fetch('https://...', { next: { revalidate: 3600 } })
+export async function createOrder(products: number[], token: string) {
+  try {
+    if (!products.length) {
+      throw new Error("No hay productos en el carrito");
+    } else if (!token) {
+      throw new Error("No hay token de autenticación");
+    }
+    const response = await axios.post(
+      `${apiUrl}/orders`,
+      {
+        products: products,
+      },
+      {
+        headers: {
+          Authorization: token,
+        },
+      }
+    );
+    return response;
+  } catch (error: any) {
+    throw new Error(error);
+  }
+}
+
+export async function getOrders(token: string) {
+  try {
+    if (!token) {
+      throw new Error("No hay token de autenticación");
+    }
+    const response = await axios.get(`${apiUrl}/users/orders`, {
+      headers: {
+        Authorization: token,
+      },
+    });
+    return response.data;
+  } catch (error: any) {
+    throw new Error(error);
+  }
+}

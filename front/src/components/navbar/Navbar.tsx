@@ -1,5 +1,4 @@
 "use client";
-
 import {
   Avatar,
   Dropdown,
@@ -13,67 +12,72 @@ import {
 } from "flowbite-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Swal from "sweetalert2";
 import { userSession } from "@/types";
+import { useRouter } from "next/navigation";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export const NavbarComponent = () => {
-  //!Mostrar avatar
-  const [showAvatar, setShowAvatar] = useState(true);
-  useEffect(() => {
-    if (typeof window !== "undefined" && window.localStorage) {
-      const userToken = localStorage.getItem("userSession");
+  const [userSessionData, setUserSessionData] = useState<userSession | null>(
+    null
+  );
+  const [showAvatar, setShowAvatar] = useState(false);
+  const router = useRouter();
+  const pathname = usePathname();
 
-      if (!userToken) {
-        setShowAvatar(false);
-      } else {
-        setShowAvatar(true);
-      }
-    }
-  }, []);
-
-  //Mostrar Login
-  const [showLogin, setShowLogin] = useState(true);
-  useEffect(() => {
-    if (typeof window !== "undefined" && window.localStorage) {
-      const userToken = localStorage.getItem("userSession");
-
-      if (!userToken) {
-        setShowLogin(true);
-      } else {
-        setShowLogin(false);
-      }
-    }
-  }, []);
-
-  //!Obtener datos de la sesion
-  const [userSession, setUserSession] = useState<userSession>();
-  useEffect(() => {
-    if (typeof window !== "undefined" && window.localStorage) {
-      const userToken = localStorage.getItem("userSession");
-      if (userToken) {
-        const userData = JSON.parse(userToken);
-        setUserSession(userData);
-      }
-    }
-  }, []);
-
-  //!salir de la sesion
-  const [token, setToken] = useState();
+  //!Cerrar sesión
   const handleSignOut = () => {
-    if (typeof window !== "undefined" && window.localStorage) {
-      localStorage.removeItem("userSession");
-      setToken(undefined);
-      window.location.href = "/home";
-    }
+    localStorage.removeItem("userSession");
+    localStorage.removeItem("cart"); // Remove cart from local storage
+    setUserSessionData(null);
+    setShowAvatar(false);
+
+    Swal.fire("¡Hasta luego!", "Has cerrado sesión exitosamente", "success");
+    router.push("/home");
   };
+
+  //!Mostar avatar si hay sesión de usuario
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.localStorage) {
+      const userToken = localStorage.getItem("userSession");
+      setUserSessionData(JSON.parse(userToken!));
+      setShowAvatar(true);
+    }
+  }, [pathname]);
+
+//! Función para obtener y actualizar la cantidad de elementos en el carrito
+const [cartItemCount, setCartItemCount] = useState(0);
+
+const updateCartItemCount = () => {
+  const cartItems = localStorage.getItem("cart");
+  
+  if (cartItems) {
+    const items: any[] = JSON.parse(cartItems);
+    setCartItemCount(items.length);
+   
+  } else {
+    setCartItemCount(0);
+  }
+};
+//! Actualizar la cantidad de elementos en el carrito
+useEffect(() => {
+  const interval = setInterval(() => {
+    updateCartItemCount();
+  }, 1000); 
+  return () => clearInterval(interval); // Limpia el intervalo cuando el componente se desmonta
+}, [cartItemCount]);
 
   return (
     <div>
       <Navbar fluid rounded className="bg-cyan-900">
         <NavbarBrand href="/home">
-          <img
+          <Image
             src="/Logo.png"
             className="mr-3 h-6 sm:h-9"
             alt="Flowbite React Logo"
+            width={30}
+            height={40}
           />
           <span className="self-center whitespace-nowrap text-2xl font-extrabold text-cyan-500">
             SmartMarket
@@ -81,7 +85,6 @@ export const NavbarComponent = () => {
         </NavbarBrand>
 
         <div className="flex md:order-2">
-          {/* Input de búsqueda */}
           <div className="relative">
             <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
               <svg
@@ -105,22 +108,30 @@ export const NavbarComponent = () => {
               type="text"
               id="search-navbar"
               className="w-52 md:w-full ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-cyan-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Search..."
+              placeholder="Buscar..."
             />
           </div>
         </div>
         <div className="flex md:order-2">
           <Link href="/cart">
-            <img
-              src="/cart.png"
-              alt="..."
-              className="h-8 cursor-grab mx-2 hover:scale-110"
-            />
+            <div className="relative">
+              <Image
+                src="/cart.png"
+                alt="..."
+                className="h-8 cursor-grab mx-2 hover:scale-110"
+                width={30}
+                height={40}
+              />
+              {cartItemCount > 0 && ( //! Mostrar el número si hay elementos en el carrito
+                <div className="absolute top-0 right-0 bg-red-500 rounded-full h-5 w-5 text-white text-xs flex items-center justify-center">
+                  {cartItemCount}
+                </div>
+              )}
+            </div>
           </Link>
-
-          {showLogin && (
+          {!showAvatar && (
             <Link href="/">
-              <div className="text-red-600 font-bold bg-lime-500 rounded-md py-1 px-3 hover:scale-110 hover:bg-yellow-300 ">
+              <div className="text-red-600 font-bold bg-lime-500 rounded-md py-1 px-3 hover:scale-110 hover:bg-yellow-300">
                 Login
               </div>
             </Link>
@@ -141,13 +152,13 @@ export const NavbarComponent = () => {
             >
               <DropdownHeader className="bg-slate-100">
                 <span className="block text-lg">
-                  {userSession?.userData.name}
+                  {userSessionData?.userData.name}
                 </span>
                 <span className="block truncate text-sm font-medium">
-                  {userSession?.userData.email}
+                  {userSessionData?.userData.email}
                 </span>
               </DropdownHeader>
-              <DropdownItem>Dashboard</DropdownItem>
+              <DropdownItem href="/dashboard">Dashboard</DropdownItem>
               <DropdownDivider />
               <DropdownItem onClick={handleSignOut}>Salir</DropdownItem>
             </Dropdown>
@@ -156,7 +167,7 @@ export const NavbarComponent = () => {
           <NavbarToggle />
         </div>
 
-        <NavbarCollapse className="text-cyan-50 ">
+        <NavbarCollapse className="text-cyan-50">
           <Link href="/home" className="active text-lg hover:text-cyan-300">
             Home
           </Link>
@@ -168,11 +179,12 @@ export const NavbarComponent = () => {
             Pricing
           </Link>
           <Link className="text-lg hover:text-cyan-300" href="#">
-            Contactenos
+            Contáctenos
           </Link>
         </NavbarCollapse>
       </Navbar>
     </div>
   );
 };
+
 export default NavbarComponent;

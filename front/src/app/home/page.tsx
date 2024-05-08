@@ -2,8 +2,8 @@ import { Button } from "flowbite-react";
 
 const Home: React.FC = () => {
   return (
-    <>
-      <main className="flex min-h-screen flex-col p-0 mx-auto">
+
+      <div>
         <section className="bg-slate-100 dark:bg-gray-900">
           <div className="grid py-8 px-4 mx-auto max-w-screen-xl lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
             <div className="place-self-center mr-auto lg:col-span-7">
@@ -477,19 +477,10 @@ const Home: React.FC = () => {
             </div>
           </div>
         </section>
-
-        <section className="bg-white dark:bg-gray-900">
-          <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-            <div className="mx-auto max-w-screen-sm text-center">
-              <a
-                href="#"
-                className="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
-              ></a>
-            </div>
-          </div>
-        </section>
-      </main>
-    </>
+      </div>
+        
+   
+  
   );
 };
 

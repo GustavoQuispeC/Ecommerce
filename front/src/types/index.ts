@@ -18,7 +18,6 @@ export interface LoginErrorProps {
 }
 
 export interface RegisterProps {
-
   name: string;
   email: string;
   address: string;
@@ -35,8 +34,26 @@ export interface RegisterErrorProps {
 }
 
 export interface userSession {
+  token: string;
   userData: {
+    id: number;
     name: string;
     email: string;
+    address: string;
+    phone: string;
+    role: string;
+    credential: {
+      id: number;
+      password: string;
+    };
+    orders: any[]; // Cambia el tipo según la estructura real de "orders"
   };
+ 
 }
+export interface IOrder {
+  id: number;
+  products: IProduct[];
+  date: string;
+  status: string;
+  total: number;
+} 

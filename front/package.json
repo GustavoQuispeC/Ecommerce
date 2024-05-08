@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.1.3",
+    "axios": "^1.6.8",
+    "boxicons": "^2.1.4",
     "flowbite-react": "^0.9.0",
     "next": "^14.2.3",
     "react": "^18.3.0",

@@ -9,7 +9,7 @@ const Product = async () => {
   const productsData = await getProducts();
   
   return (
-    <div className="md:h-screen mx-auto">
+    <div className="flex min-h-screen flex-col p-0 mx-auto">
       <div>
         <Carousel />
       </div>
@@ -30,7 +30,7 @@ const Product = async () => {
       <br></br>
 
       {/* //List of products */}
-      <div className="flex flex-wrap justify-center ">
+      <div className="flex flex-wrap justify-center  ">
         <Cards products={productsData} />
         </div>
    

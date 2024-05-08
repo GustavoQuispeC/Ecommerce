@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Cards = ({ products }: { products: IProduct[] }) => {
   return (
-    <div className="h-screen">
+    
       <div className="flex flex-wrap justify-center gap-6 py-5">
         {products.map((product) => {
           return (
@@ -14,7 +14,7 @@ const Cards = ({ products }: { products: IProduct[] }) => {
           );
         })}
       </div>
-    </div>
+
   );
 };
 

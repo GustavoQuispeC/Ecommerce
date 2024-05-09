@@ -19,3 +19,4 @@ const Cards = ({ products }: { products: IProduct[] }) => {
 };
 
 export default Cards;
+

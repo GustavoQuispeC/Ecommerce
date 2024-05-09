@@ -51,9 +51,8 @@ const RegisterUser = () => {
           // Redirigiriendo al login
           setTimeout(() => {
             Router.push("/");
-          }, 3000); 
+          }, 3000);
         });
-        
     } catch (error: any) {
       throw new Error(error);
     }
@@ -75,8 +74,8 @@ const RegisterUser = () => {
           </Alert>
         )}
       </div>
-      <div className="bg-gray-100 flex items-center justify-center h-screen mt-16">
-        <div className="bg-white p-8 rounded-lg shadow-lg max-w-sm w-full">
+      <div className="flex items-center justify-center md:h-screen mt-16">
+        <div className="bg-teal-50 p-8 rounded-lg shadow-lg max-w-sm w-full">
           <div className="flex justify-center mb-6">
             <span className="inline-block bg-gray-200 rounded-full p-3">
               <svg
@@ -200,7 +199,7 @@ const RegisterUser = () => {
             </div>
             <button
               type="submit"
-              className="w-full bg-cyan-700 text-white px-4 py-2 rounded-lg hover:bg-cyan-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+              className="w-full bg-yellow-600 text-white px-4 py-2 rounded-lg hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
             >
               Registrar
             </button>

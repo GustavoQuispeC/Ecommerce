@@ -41,8 +41,15 @@ export const NavbarComponent = () => {
   useEffect(() => {
     if (typeof window !== "undefined" && window.localStorage) {
       const userToken = localStorage.getItem("userSession");
-      setUserSessionData(JSON.parse(userToken!));
-      setShowAvatar(true);
+      if (userToken) {
+        setUserSessionData(JSON.parse(userToken));
+        setShowAvatar(true);
+      } else {
+        setUserSessionData(null);
+        setShowAvatar(false);
+      }
+    } else {
+      setShowAvatar(false);
     }
   }, [pathname]);
 

@@ -20,20 +20,21 @@ import {
 const FooterComponent = () => {
   return (
     <>
-      <Footer container className="bg-cyan-900">
+      <Footer container className="bg-teal-900">
         <div className="w-full">
           <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1 ">
             <div>
               <FooterBrand
-                href="/"
+                href="/home"
                 src="/Logo.png"
                 alt="SmartMarket Logo"
                 name="SmartMarket"
+                color ="white"
               />
             </div>
             <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
               <div>
-                <FooterTitle className="text-cyan-50" title="about" />
+                <FooterTitle className="text-cyan-50" title="Sobre nosotros" />
                 <FooterLinkGroup col>
                   <FooterLink className="text-cyan-50" href="#">
                     Quienes somos
@@ -44,7 +45,7 @@ const FooterComponent = () => {
                 </FooterLinkGroup>
               </div>
               <div>
-                <FooterTitle className="text-cyan-50" title="Follow us" />
+                <FooterTitle className="text-cyan-50" title="Sguenos" />
                 <FooterLinkGroup col>
                   <FooterLink className="text-cyan-50" href="#">
                     Github
@@ -58,10 +59,10 @@ const FooterComponent = () => {
                 <FooterTitle className="text-cyan-50" title="Legal" />
                 <FooterLinkGroup col>
                   <FooterLink className="text-cyan-50" href="#">
-                    Privacy Policy
+                    Politicas de privacidad
                   </FooterLink>
                   <FooterLink className="text-cyan-50" href="#">
-                    Terms &amp; Conditions
+                    Terminos de uso
                   </FooterLink>
                 </FooterLinkGroup>
               </div>

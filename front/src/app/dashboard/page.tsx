@@ -85,9 +85,9 @@ const Dashboard = () => {
     </div>
   </div>
   {/* Contenido principal */}
-  <main className="flex-1 overflow-y-auto">
+  <div className="flex-1 overflow-y-auto">
     {/* Barra de navegación */}
-    <nav className="bg-gray-200 p-1 md:p-4">
+    <div className="bg-gray-200 p-1 md:p-4">
       <h2 className="text-lg font-semibold mb-2">Datos de Usuario</h2>
       <div className="bg-gray-50 p-4 rounded shadow">
         {/* Aquí irían los datos del usuario */}
@@ -96,9 +96,9 @@ const Dashboard = () => {
         <p>Telefono: {token?.userData.phone}</p>
         <p>Dirección: {token?.userData.address} </p>
       </div>
-    </nav>
+    </div>
     {/* Sección de datos de usuario y órdenes */}
-    <section className="p-1 md:p-4 flex flex-col flex-1">
+    <div className="p-1 md:p-4 flex flex-col flex-1">
      
       
       {/* Sección de órdenes */}
@@ -160,8 +160,8 @@ const Dashboard = () => {
           </div>
         )}
       </div>
-    </section>
-  </main>
+    </div>
+  </div>
   {/* Footer */}
   <footer className="bg-gray-200 p-4">
     {/* Contenido del footer */}

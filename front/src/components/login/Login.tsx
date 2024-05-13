@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { validateLoginForm } from "@/utils/loginFormValidation";
 import { useRouter } from "next/navigation";
 import Swal from "sweetalert2";
+import { IoHome } from "react-icons/io5";
 
 const LoginForm = () => {
   const Router = useRouter();
@@ -55,7 +56,7 @@ const LoginForm = () => {
               showConfirmButton: false,
               timer: 1500,
             });
-            Router.push("/home");
+            Router.push("/product");
           } else {
             Swal.fire({
               icon: "error",
@@ -206,14 +207,21 @@ const LoginForm = () => {
                 Ingresar
               </button>
             </div>
-            
           </div>
           <div className="text-sm text-right">
-              <a href="/user" className="text-sky-500 hover:text-sky-600">
-                ¿Aún no tienes cuenta? Regístrate
-              </a>
-            </div>
+            <a href="/user" className="text-sky-500 hover:text-sky-600">
+              ¿Aún no tienes cuenta? Regístrate
+            </a>
+          </div>
         </form>
+      </div>
+      <div className="flex flex-row items-center justify-center pt-6">
+        <a
+          className="flex flex-row items-center appearance-none bg-teal-400 w-96 text-gray-500 font-bold border border-yellow-200 rounded-lg py-3 px-3 leading-tight hover:bg-teal-300 focus:outline-none focus:bg-white focus:border-gray-500 text-center"
+          href="/product"
+        ><IoHome />
+          <span className="flex-grow">Visitar la tienda</span> 
+        </a>
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { FooterComponent } from "@/components/footer";
 import { Hidden } from "@/components/hidden";
+import LoginForm from "@/components/login/Login";
 
 const inter = Inter({ subsets: ["latin"] });
 

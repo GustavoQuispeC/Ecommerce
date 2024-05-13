@@ -34,7 +34,7 @@ export const NavbarComponent = () => {
     setShowAvatar(false);
 
     Swal.fire("¡Hasta luego!", "Has cerrado sesión exitosamente", "success");
-    router.push("/home");
+    router.push("/product");
   };
 
   //!Mostar avatar si hay sesión de usuario
@@ -78,7 +78,7 @@ useEffect(() => {
   return (
     <div>
       <Navbar fluid rounded className="bg-cyan-900">
-        <NavbarBrand href="/home">
+        <NavbarBrand href="/">
           <Image
             src="/Logo.png"
             className="mr-3 h-6 sm:h-9"
@@ -137,7 +137,7 @@ useEffect(() => {
             </div>
           </Link>
           {!showAvatar && (
-            <Link href="/">
+            <Link href="/login">
               <div className="text-red-600 font-bold bg-lime-500 rounded-md py-1 px-3 hover:scale-110 hover:bg-yellow-300">
                 Login
               </div>
@@ -175,15 +175,15 @@ useEffect(() => {
         </div>
 
         <NavbarCollapse className="text-cyan-50">
-          <Link href="/home" className="active text-lg hover:text-cyan-300">
+          <Link href="/" className="active text-lg hover:text-cyan-300">
             Home
           </Link>
 
           <Link className="text-lg hover:text-cyan-300" href="/product">
             Productos
           </Link>
-          <Link className="text-lg hover:text-cyan-300" href="#">
-            Pricing
+          <Link className="text-lg hover:text-cyan-300" href="/user">
+            Registrarse
           </Link>
           <Link className="text-lg hover:text-cyan-300" href="#">
             Contáctenos

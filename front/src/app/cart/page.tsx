@@ -6,7 +6,6 @@ import Image from "next/image";
 import { createOrder } from "@/helpers/product.helpers";
 import { IoHome } from "react-icons/io5";
 
-
 const Cart = () => {
   const router = useRouter();
 
@@ -27,9 +26,9 @@ const Cart = () => {
           cancelButtonText: "Permanecer aquí",
         }).then((result) => {
           if (result.isConfirmed) {
-            router.push("/"); // Redirige al login
+            router.push("/login"); // Redirige al login
           } else {
-            router.push("/home");
+            router.push("/product");
           }
         });
       }
@@ -93,7 +92,7 @@ const Cart = () => {
         "Tu compra ha sido realizada con éxito",
         "success"
       );
-      router.push("/home");
+      router.push("/product");
     } catch (error) {
       Swal.fire("¡Error!", "Ocurrió un error al realizar la compra", "error");
     }
@@ -101,10 +100,10 @@ const Cart = () => {
 
   return (
     <>
-      <div className="h-auto py-8">
+      <div className="max-w-4xl mx-auto p-8 md:pt-6 md:h-screen">
         <div className="mx-auto px-4 sm:px-6 lg:px-8">
           {cart.length === 0 ? (
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center h-screen">
               <div className="flex flex-col items-center">
                 <p className="text-center">El carrito de compras está vacío.</p>
                 <p className="text-center">
